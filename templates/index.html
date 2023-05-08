@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<head>
+
+    <title>Rui's Portfolio</title>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/91d2469df8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <br>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="container_flex">
+              <br>
+              <img src="{{ url_for('static', filename='photo.png') }}" class="center bg-img">
+              <br>
+            </div>
+
+            <h1>RUI CRUZEIRO</h1>
+            <p>Engineer - Data Scientist - Python Enthusiast</p>
+            <br>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="center">
+
+        <div class="container_blue">
+          <br>
+          <h1 class="font_gray">PORTFOLIO</h1>
+
+          <div class="container_blue container_flex">
+
+            <div class="gallery">
+                <a href="https://poupar-no-imi.onrender.com/" target="_blank">
+                    <p class="fa-solid fa-2xl fa-piggy-bank gallery_item p_gray fa-fw"></p>
+                </a>
+                <a href="https://poupar-no-imi.onrender.com/" target="_blank">
+                    <p class="gallery_item p_gray">Property Tax Savings App</p>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a href="https://castelos-pt.onrender.com/" target="_blank">
+                    <p class="fa-solid fa-2xl fa-chess-rook gallery_item p_gray"></p>
+                </a>
+                <a href="https://castelos-pt.onrender.com/" target="_blank">
+                    <p class="gallery_item p_gray">Portuguese Castles Map</p>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a href="https://github.com/ruicruzeiro/kwikval/blob/master/API.ipynb" target="_blank">
+                    <p class="fa-solid fa-2xl fa-house gallery_item p_gray"></p>
+                </a>
+                <a href="https://github.com/ruicruzeiro/kwikval/blob/master/API.ipynb" target="_blank">
+                    <p class="gallery_item p_gray">Flat valuation tool</p>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a href="https://github.com/ruicruzeiro/sweet-portugal" target="_blank">
+                    <p class="fa-solid fa-2xl fa-cookie-bite gallery_item p_gray"></p>
+                </a>
+                <a href="https://github.com/ruicruzeiro/sweet-portugal" target="_blank">
+                    <p class="gallery_item p_gray">Portuguese pastry identifier</p>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a href="https://www.youtube.com/watch?v=QyhaNXXzvdM&t=1382s" target="_blank">
+                    <p class="fa-solid fa-2xl fa-briefcase gallery_item p_gray"></p>
+                </a>
+                <a href="https://www.youtube.com/watch?v=QyhaNXXzvdM&t=1382s" target="_blank">
+                    <p class="gallery_item p_gray">Job Predictor (presentation)</p>
+                </a>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+
+    </section>
+
+    <p class="end_text">This website's HTTML/CSS was made from scratch — no template, so what you see is what you get. Uses Flask and Fontawesome.</p>
+
+</body>
+</html>
